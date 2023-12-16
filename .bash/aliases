@@ -1,0 +1,10 @@
+#!/bin/bash
+alias "__"="clear ; exec bash"
+alias ".."="cd .."
+alias "nano"="nano -mDEgl -T 4"
+
+
+# GIT aliases
+alias gita="git add ."
+alias gitc="git commit -m"
+alias gitp="git push"

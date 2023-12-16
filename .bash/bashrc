@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function edit_reload {
+      FILE="$HOME/.bash/$1"
+     nano -0 "$FILE"
+     source "$FILE"
+ }
+
+alias bashrc="edit_reload bashrc"
+alias aliases="edit_reload aliases"
+alias prompts="edit_reload prompts"
+alias bash_env="edit_reload bash_env"

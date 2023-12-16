@@ -1,0 +1,51 @@
+#!/bin/bash
+
+
+# [20:55|username:~/bin:master]$ 
+# PS1='[\A|\u:\[\e[92;1m\]\w\[\e[0m\]:\[\e[96m\]$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)\[\e[0m\]]\\$ '
+
+
+# [20:59|username@hostname:~/bin:master]$ 
+# PS1='[\A|\u@\h:\[\e[92;1m\]\w\[\e[0m\]:\[\e[96m\]$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)\[\e[0m\]]\\$ '
+
+
+# [username:bin:master]$ 
+# PS1='[\u:\[\e[92;1m\]\W\[\e[0m\]:\[\e[96m\]$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)\[\e[0m\]]\\$ '
+
+
+# [~/bin:master]$
+# PS1='[\[\e[92;1m\]\w\[\e[0m\]:\[\e[96m\]$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)\[\e[0m\]]\\$ '
+
+
+# [21:04|~/bin:master]$
+# PS1='[\A|\[\e[92;1m\]\w\[\e[0m\]:\[\e[96m\]$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)\[\e[0m\]]\\$ '
+
+
+# [21:05|bin:master]$
+# PS1='[\A|\[\e[92;1m\]\W\[\e[0m\]:\[\e[96m\]$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)\[\e[0m\]]\\$ '
+
+
+# username:~/bin$
+# PS1='\u:\[\e[92m\]\w\[\e[0m\]\$ '
+
+
+# username@hostname:~/bin$
+# PS1='\u\[\e[2m\]@\h\[\e[0m\]:\[\e[92m\]\w\[\e[0m\]\$ '
+
+
+# ~/bin$
+# PS1='\[\e[92m\]\w\[\e[0m\]\$ '
+
+
+
+
+
+
+# ┌─[0]─[14:41]─[username@hostname tty2]  (no colors)
+# └─[~/bin:master]$ 
+# PS1='\n┌─[$?]─[\A]─[\u@\h tty\l]\n└─[\w:$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)]\$ '
+
+
+# ┌─[0]─[14:41]─[username@hostname tty2]
+# └─[~/bin:master]$ 
+PS1='\n┌─[\[\e[92;1m\]$?\[\e[0m\]]─[\[\e[95;1m\]\A\[\e[0m\]]─[\[\e[92;1m\]\u\[\e[22;2;2m\]@\h \[\e[0;95m\]tty:\[\e[1m\]$(tty)\[\e[0m\]]\n└─[\[\e[92;1m\]\w\[\e[0m\]:\[\e[95m\]$(git branch 2>/dev/null | grep '"'"'*'"'"' | colrm 1 2)\[\e[0m\]]\$ '
