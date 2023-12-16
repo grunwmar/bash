@@ -7,6 +7,7 @@ alias "lx"="ls -lfXrAp"
 alias "ll"="ls -lah"
 alias "la"="ls -a"
 
+
 # GIT aliases
 alias gita="git add ."
 alias gitc="git commit -m"

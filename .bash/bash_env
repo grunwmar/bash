@@ -4,8 +4,11 @@ if [ -d $HOME/.bash/bin ]; then
     export PATH=$HOME/.bash/bin:$PATH
 fi
 
+shopt -s histappend
+
 export HISTFILE=$HOME/.bash/bash_history.log
-export HISTSIZE=11000
-export HISTFILESIZE=11000
+export HISTSIZE=2000
+export HISTFILESIZE=5000
 export HISTTIMEFORMAT="%F %T "
+
 export PROMPT_COMMAND='history -a'
