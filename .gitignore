@@ -1,7 +1,9 @@
 # Ignore everything
-*
+/*
 
 # But not these files...
 !.gitignore
 !.bashrc
-!/.bash/*
+
+/bash/*
+!/bash/*
