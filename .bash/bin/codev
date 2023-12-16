@@ -1,7 +1,11 @@
 #!/bin/bash
 
-if [ -z $(which bat) ]; then
-    cat $1 | less -rc
+if [ -n $(which batcat) ]; then
+    batcat -pf "$1" | less -rc
 else
-    bat -pf $1 | less -rc
+    if [ -n $(which bat) ]; then
+        bat -pf "$1" | less -rc
+    else
+        cat "$1" | less -rc
+    fi
 fi
