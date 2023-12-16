@@ -1,6 +1,8 @@
 # Ignore everything
 /*
 
+/.bash/bash_history.log
+
 # But not these files...
 !.gitignore
 !.bashrc
