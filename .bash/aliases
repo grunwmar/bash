@@ -11,3 +11,6 @@ alias "la"="ls -a"
 alias gita="git add ."
 alias gitc="git commit -m"
 alias gitp="git push"
+
+# tmux
+alias tmux="tmux -f $HOME/.bash/tmux.conf"
