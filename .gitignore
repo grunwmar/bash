@@ -4,5 +4,7 @@
 # But not these files...
 !.gitignore
 !.bashrc
+!make_package
+!bash_extension.tar.gz
 
 !/.bash
