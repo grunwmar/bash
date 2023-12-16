@@ -6,7 +6,7 @@ fi
 
 shopt -s histappend
 
-export HISTFILE=$HOME/.bash/bash_history.log
+export HISTFILE=$HOME/.bash_history.log
 export HISTSIZE=2000
 export HISTFILESIZE=5000
 export HISTTIMEFORMAT="%F %T "
