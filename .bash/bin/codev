@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -z $(which bat) ]; then
+    cat $1 | less -rc
+else
+    bat -pf $1 | less -rc
+fi

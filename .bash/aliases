@@ -3,6 +3,9 @@ alias "__"="clear ; exec bash"
 alias ".."="cd .."
 alias "nano"="nano -mDEgl -T 4"
 
+alias "lx"="ls -lfXrAp"
+alias "ll"="ls -lah"
+alias "la"="ls -a"
 
 # GIT aliases
 alias gita="git add ."
